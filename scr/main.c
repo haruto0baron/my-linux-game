@@ -6,8 +6,10 @@ int main(void) {
     
     InitWindow(800, 600, "My Linux Game");
     SetTargetFPS(60);
+        int width = GetScreenWidth();
+        int height = GetScreenHeight();
 
-    Vector2 ball = {400, 300};
+    Vector2 ball = {width / 2, height / 2};
     float radius = 30.0f;
 
     while (!WindowShouldClose()) {
@@ -15,8 +17,8 @@ int main(void) {
 
         // ウインドウ
 
-        int width = GetScreenWidth();
-        int height = GetScreenHeight();
+        width = GetScreenWidth();
+        height = GetScreenHeight();
 
         //  キー
 
